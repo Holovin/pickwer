@@ -1,0 +1,17 @@
+# BuildKit reads this file for docker/Dockerfile; the build context is the
+# repository root. Only application/build inputs enter the context. Keep local
+# data, Git, dependencies, old dist output and environment files out of the image.
+**
+!package.json
+!package-lock.json
+!index.html
+!public/
+!public/**
+!tsconfig.json
+!vite.config.ts
+!src/
+!src/**
+# The build typechecks both application and test sources.
+!tests/
+!tests/**
+!docker/sws.toml
