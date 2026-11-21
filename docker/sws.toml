@@ -1,0 +1,22 @@
+[general]
+host = "0.0.0.0"
+port = 8080
+root = "/public"
+log-level = "info"
+compression = true
+cache-control-headers = false
+directory-listing = false
+
+[[advanced.headers]]
+source = "/**"
+headers.Content-Security-Policy = "frame-ancestors 'self'"
+headers.X-Frame-Options = "SAMEORIGIN"
+
+# The HTML entry point must revalidate after an application update.
+[[advanced.headers]]
+source = "/"
+headers.Cache-Control = "no-cache"
+
+[[advanced.headers]]
+source = "/index.html"
+headers.Cache-Control = "no-cache"
