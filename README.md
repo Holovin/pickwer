@@ -2,6 +2,8 @@
 
 Local web tool for screenshot comparison
 
+Live demo: [pickwer.halavin.de](https://pickwer.halavin.de) (it's fully static, so you can also host your own copy)
+
 1. Open a folder with same-size PNGs
 2. Pick screenshots in the sidebar
 3. To compare, use:
