@@ -1,11 +1,12 @@
-name: screenshot-compare
+name: pickwer
 
 services:
   viewer:
     build:
       context: .
       dockerfile: docker/Dockerfile
-    image: screenshot-compare:local
+    image: pickwer:local
+    container_name: pickwer
     ports:
       - "${VIEWER_BIND:-127.0.0.1}:${VIEWER_PORT:-8787}:8080"
     read_only: true

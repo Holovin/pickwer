@@ -42,7 +42,7 @@ docker compose up -d --build
 docker compose logs -f viewer
 ```
 
-Open [http://localhost:8787/](http://localhost:8787/). Compose builds the `screenshot-compare:local` image and publishes container port 8080 on `127.0.0.1:8787` by default. To use another host port:
+Open [http://localhost:8787/](http://localhost:8787/). Compose builds the `pickwer:local` image, runs it as the `pickwer` container and publishes container port 8080 on `127.0.0.1:8787` by default. To use another host port:
 
 ```sh
 VIEWER_PORT=8788 docker compose up -d --build
